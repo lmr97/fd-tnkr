@@ -1,0 +1,34 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "slctdChecklistSubmission",
+    "description": "Describes structure of shift submitted checklist, showing what was completed, by whom, and when.",
+    "type": "object",
+    "required": [ "date", "shift", "employee", "sections" ],
+    "properties": {
+        "date": { "type": "string", "format": "date" },
+        "employee": { "type": "string" },
+        "shift": { "$ref": "./checklistDefs.schema.json#/$defs/shift" },
+        "sections": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [ "startBy", "dueBy", "listItems" ],
+                "properties": {
+                    "startBy": { "$ref": "./checklistDefs.schema.json#/$defs/startBy" },
+                    "dueBy": { "$ref": "./checklistDefs.schema.json#/$defs/dueBy" },
+                    "listItems": {
+                        "description": "The tasks that should be completed between `startBy` and `dueBy` times, and whether they were marked `done`.",
+                        "type": "array",
+                        "items": { 
+                            "type": "object",  
+                            "properties": {
+                                "task": { "type": "string" },
+                                "done": { "type": "boolean" }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
