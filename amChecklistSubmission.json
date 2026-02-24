@@ -118,7 +118,7 @@
         },
         {
             "startBy": "11:00:00-07:00",
-            "dueBy": "02:30:00-07:00",
+            "dueBy": "14:30:00-07:00",
             "listItems": [
                 {
                     "task": "Print departure list and verify with housekeeping that all scheduled departures have vacated the room and then check the guest out in FOSSE",
@@ -167,8 +167,8 @@
             ]
         },
         {
-            "startBy": "02:30:00-07:00",
-            "dueBy": "03:00:00-07:00",
+            "startBy": "14:30:00-07:00",
+            "dueBy": "15:00:00-07:00",
             "listItems": [
                 {
                     "task": "Count your cash to determine if a drop is needed. Wait for the PM shift to count the drawer before departing your shift.",

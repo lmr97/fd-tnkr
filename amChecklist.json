@@ -41,7 +41,7 @@
         },
         {
             "startBy": "11:00:00-07:00",
-            "dueBy": "02:30:00-07:00",
+            "dueBy": "14:30:00-07:00",
             "listItems":  [
                 "Print departure list and verify with housekeeping that all scheduled departures have vacated the room and then check the guest out in FOSSE",
                 "Check Credit Card Authorization Binder for today's date and update reservations with correct method of payment.",
@@ -57,8 +57,8 @@
             ]
         },
         {
-            "startBy": "02:30:00-07:00",
-            "dueBy": "03:00:00-07:00",
+            "startBy": "14:30:00-07:00",
+            "dueBy": "15:00:00-07:00",
             "listItems":  [
                 "Count your cash to determine if a drop is needed. Wait for the PM shift to count the drawer before departing your shift.",
                 "Run Shift Closing report BUT DO NOT UPDATE IT YET. (F8-FOffice-C-S, “Option”=P F10). Review:00-07:00ount to drop and review to ensure proper charge codes, and fix if needed so that drop reflects Closing Report.",
