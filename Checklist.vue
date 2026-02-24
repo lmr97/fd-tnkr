@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { type Checklist } from './types'
+import { type Checklist, Shift } from './types'
 const clraw = `{
     "$schema": "./schemata/checklistSubmission.schema.json",
     "date": "2026-02-20",
@@ -204,7 +204,13 @@ const clstate = ref<Checklist>(stp)
 const timeFmt = Intl.DateTimeFormat("en-us", {hour: "numeric", minute: "numeric"})
 
 function submitForm() {
-  console.log(JSON.stringify(clstate.value.sections[0].listItems[0]))
+  console.log(
+    clstate.value.employee,
+    clstate.value.date,
+    JSON.stringify(
+      clstate.value.sections[0].listItems[0]
+    )
+  )
 }
 
 </script>
@@ -213,39 +219,92 @@ function submitForm() {
   <h1>{{ clstate.shift }} Shift Checklist</h1>
   <form @submit.prevent="submitForm">
   
-    <div class="tin-wrap">
+    <div class="in-wrap">
       <label for="employee">Employee:</label>
       <input id="employee" v-model="clstate.employee" />
     </div>
   
-    <div class="tin-wrap">
+    <div class="in-wrap">
       <label for="date">Date:</label>
       <input id="date" v-model="clstate.date" />
     </div>
+
+    <div class="in-wrap">
+        <label for="shift">Shift:</label>
+        <div v-for="s in Shift">
+            <!-- matching `id` and `for` is key to making the label clickable -->
+            <!-- further, the atribute has to be prefaced with `:` to bring the Vue variables into scope -->
+            <input :id="s" type="radio" :value="s" v-model="clstate.shift" />
+            <label :for="s">{{ s }}</label>
+        </div>
+    </div>
     
-    <li v-for="section in clstate.sections">
+    <li v-for="section in clstate.sections" :key="section.dueBy.getTime()">
       <div class="sect-wrap">
         <h2>{{ timeFmt.format(section.startBy) }} &ndash; {{ timeFmt.format(section.dueBy) }}</h2>
-        <li v-for="item in section.listItems">
-          <input type="checkbox" v-model="item.done" />
-          <span>{{ item.task }}</span>
+        <li class="task" v-for="item in section.listItems" :key="item.task">
+          <input type="checkbox" :id="item.task" v-model="item.done" />
+          <div class="task-text-wrap">
+            <label :for="item.task">{{ item.task }}</label>
+          </div>
         </li>
       </div>
     </li>
   
-    <button type="submit">Submit</button>
+    <button id="submit-button" type="submit">Submit</button>
+
   </form>
 </template>
 
-<style>
-.tin-wrap {
-  width: 60vw;
-  display: flex;
-  justify-content: right;
+<style scoped>
+#submit-button {
+    font-size: large;
+    padding: 8px;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    background-color: purple;
+    width: 100%;
+    margin-bottom: 10px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+#submit-button:hover {
+    background-color: blueviolet;
+}
+.in-wrap {
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h2 {
+    margin: 8px;
+}
+li {
+    list-style-type: none;
+}
+.task {
+    display: flex;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.task-text-wrap {
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] {
+    margin: 10px;
 }
 .sect-wrap {
-  border-width: 1px;
-  border-color: slategrey;
-  border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: slategrey;
+    border-radius: 5px;
 }
 </style>
