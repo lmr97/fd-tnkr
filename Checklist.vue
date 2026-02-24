@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { type Checklist, Shift } from './types'
+import { Section, type Checklist, type Shift } from './types'
 const clraw = `{
     "$schema": "./schemata/checklistSubmission.schema.json",
     "date": "2026-02-20",
@@ -193,9 +193,9 @@ const clraw = `{
         }
     ]
 }`
-const stp = JSON.parse(clraw) as Checklist
+const stp = JSON.parse(clraw)
 const cldate = stp.date
-stp.sections.forEach((s) => {
+stp.sections.forEach((s: Section) => {
     s.startBy = new Date(cldate + "T" + s.startBy)
     s.dueBy   = new Date(cldate + "T" + s.dueBy)
   }
