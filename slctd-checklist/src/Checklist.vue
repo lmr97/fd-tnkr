@@ -220,22 +220,24 @@ function submitForm() {
   <form @submit.prevent="submitForm">
   
     <div class="in-wrap">
-      <label for="employee">Employee:</label>
+      <label for="employee">Employee</label>
       <input id="employee" v-model="clstate.employee" />
     </div>
   
     <div class="in-wrap">
-      <label for="date">Date:</label>
+      <label for="date">Date</label>
       <input id="date" v-model="clstate.date" />
     </div>
 
     <div class="in-wrap">
-        <label for="shift">Shift:</label>
-        <div v-for="s in Shift">
-            <!-- matching `id` and `for` is key to making the label clickable -->
-            <!-- further, the atribute has to be prefaced with `:` to bring the Vue variables into scope -->
-            <input :id="s" type="radio" :value="s" v-model="clstate.shift" />
-            <label :for="s">{{ s }}</label>
+        <label for="shift">Shift</label>
+        <div class="shift-wrap">
+            <div v-for="s in Shift">
+                <!-- matching `id` and `for` is key to making the label clickable -->
+                <!-- further, the atribute has to be prefaced with `:` to bring the Vue variables into scope -->
+                <input :id="s" type="radio" :value="s" v-model="clstate.shift" />
+                <label :for="s">{{ s }}</label>
+            </div>
         </div>
     </div>
     
@@ -243,10 +245,12 @@ function submitForm() {
       <div class="sect-wrap">
         <h2>{{ timeFmt.format(section.startBy) }} &ndash; {{ timeFmt.format(section.dueBy) }}</h2>
         <li class="task" v-for="item in section.listItems" :key="item.task">
-          <input type="checkbox" :id="item.task" v-model="item.done" />
-          <div class="task-text-wrap">
-            <label :for="item.task">{{ item.task }}</label>
-          </div>
+            <div class="centered">
+                <input type="checkbox" :id="item.task" v-model="item.done" />
+            </div>
+            <div class="task-text-wrap">
+                <label :for="item.task">{{ item.task }}</label>
+            </div>
         </li>
       </div>
     </li>
@@ -257,6 +261,13 @@ function submitForm() {
 </template>
 
 <style scoped>
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.shift-wrap {
+    display: flex;
+    flex-direction: column;
+}
 #submit-button {
     font-size: large;
     padding: 8px;
@@ -274,8 +285,9 @@ function submitForm() {
     background-color: blueviolet;
 }
 .in-wrap {
+    font-weight: 500;
     margin-bottom: 20px;
-    width: 80%;
+    width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -292,19 +304,36 @@ li {
     margin-bottom: 6px;
 }
 
-.task-text-wrap {
+.centered, .task-text-wrap {
     display: flex;
     align-items: center;
 }
-input[type="checkbox"] {
-    margin: 10px;
-}
-.sect-wrap {
-    margin-bottom: 20px;
-    padding: 5px;
+input:not([type="checkbox"]) {
+    padding: 4px;
     border-style: solid;
     border-width: 1px;
     border-color: slategrey;
     border-radius: 5px;
+}
+input[type="checkbox"] {
+    height: fit-content;
+    transform: scale(1.7);
+    margin: 15px;
+    box-shadow: 0 0 10px #fff;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+input[type="checkbox"]:hover {
+    box-shadow: 0 0 10px #5f4f5f;
+}
+.sect-wrap {
+    font-weight: 500;
+    background-color:#fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(155, 164, 173);
+    border-radius: 12px;
 }
 </style>
