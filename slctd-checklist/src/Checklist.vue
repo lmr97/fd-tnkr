@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { type Section, type Checklist, Shift } from '../types'
+import { type Section, type Checklist, Shift } from './types'
 const clraw = `{
     "$schema": "./schemata/checklistSubmission.schema.json",
     "date": "2026-02-20",
