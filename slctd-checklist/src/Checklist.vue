@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Section, type Checklist, Shift } from '../types'
+import { type Section, type Checklist, Shift } from '../types'
 const clraw = `{
     "$schema": "./schemata/checklistSubmission.schema.json",
     "date": "2026-02-20",
@@ -208,7 +208,7 @@ function submitForm() {
     clstate.value.employee,
     clstate.value.date,
     JSON.stringify(
-      clstate.value.sections[0].listItems[0]
+      clstate.value.sections[0]?.listItems[0]
     )
   )
 }
