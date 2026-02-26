@@ -2,26 +2,22 @@
     "$schema": "./schemata/checklistSubmission.schema.json",
     "date": "2026-02-25",
     "employee": "Orion",
-    "shift": "PM",
+    "shift": "Audit",
     "sections": [
-        {
-            "startBy": "15:00:00-07:00",
-            "dueBy": "18:00:00-07:00",
+       {
+            "startBy": "23:00:00-07:00",
+            "dueBy": "02:00:00-07:00",
             "listItems": [
                 {
-                    "task": "Communicate with AM shift and go over any important information need passed on.",
+                    "task": "Lock the front entrance door.",
+                    "done": false
+                },
+                {
+                    "task": "Communicate with PM shift and go over any important information need passed on.",
                     "done": false
                 },
                 {
                     "task": "Fill out occupancy information in Red Book and review any information needing to be passed along.",
-                    "done": false
-                },
-                {
-                    "task": "Count your drawer and verify it has the correct amount before starting your shift. Ensure the drawer is balanced before the AM shift departs.",
-                    "done": false
-                },
-                {
-                    "task": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports)",
                     "done": false
                 },
                 {
@@ -37,7 +33,7 @@
                     "done": false
                 },
                 {
-                    "task": "Check room status and make sure there are no VACANT DIRTY (VD) rooms before housekeeping leaves for the day",
+                    "task": "Count your drawer, and ensure it is at correct amount before beginning your shift. Ensure the drawer is balanced before the PM shift departs.",
                     "done": false
                 },
                 {
@@ -45,15 +41,27 @@
                     "done": false
                 },
                 {
-                    "task": "Do Parking Pass bucket check: for unreturned passes, please write the folio number on the parking agreement and leave the slip for the AGM.",
+                    "task": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports)",
                     "done": false
                 },
                 {
-                    "task": "Prepare a wake-up call sheet for use throughout the night.",
+                    "task": "Go into Mobility Dashboard (F8-Rsrv-D) and look at the MKeyDsp to make sure all mobile keys have been sent.  Make sure no keys say Pending or Desk. Send keys that have Pending or Desk for KeyStatus.",
                     "done": false
                 },
                 {
-                    "task": "Log the temperatures of the freezers and refrigerator in the kitchen.",
+                    "task": "Check your printer and be sure there is enough paper for all reports to run without disruption.",
+                    "done": false
+                },
+                {
+                    "task": "Verify that security cameras are working and recording properly.",
+                    "done": false
+                },
+                {
+                    "task": "If the hotel is oversold, determine which guests are to be walked following the guidelines established by hotel management.  Prepare the walk letters and check for availability at alternate hotels.",
+                    "done": false
+                },
+                {
+                    "task": "If any guests are walked, use walk option on reservation in FOSSE. Follow steps entering new hotel information and enter return date if they will be returning to hotel later in reservation.",
                     "done": false
                 },
                 {
@@ -61,19 +69,35 @@
                     "done": false
                 },
                 {
+                    "task": "Print PrePay Report (F8-FOffice-P-P) Ensure all guests have proper credit.",
+                    "done": false
+                },
+                {
+                    "task": "Complete a Bucket Check (F8-FOffice-F-B). Check credit card number, address, company name, departure date, and rate.",
+                    "done": false
+                },
+                {
+                    "task": "Check credit cards for additional authorization. (F8-BOffice-C-C-Y-Enter-F4-Y-Enter) and notify guests as needed to update their account.",
+                    "done": false
+                },
+                {
+                    "task": "Print the Credit Card Transaction Report. (F8-BOffice-C-T-Enter-Enter-Y-Print).",
+                    "done": false
+                },
+                {
                     "task": "Continuously monitor FOSSE home screen for any “Process Mobile” and “Process GuestRequest” alerts.  Prepare, complete and respond to all requests for Mobile Check-In and Mobile Requests in a timely manner.",
                     "done": false
                 },
                 {
-                    "task": "Verify any Out of Order Rooms (F8-RoomMgt-H-P-R-Enter).",
+                    "task": "Print Arrivals List for the following day. (F8-Rsrv-P-A-Change Date to Tomorrow’s Date).",
                     "done": false
                 },
                 {
-                    "task": "Post any Valet Charges (charge code, VL) and deliver dry cleaning to guest rooms. Make sure you are posting the amount on the listed on the ticket attached to the clothing, and not what is listed on the daily invoice – amounts are different.",
+                    "task": "Print Departures List for the following day. (F8-Rsrv-P-P-Change Date to tomorrow’s date)",
                     "done": false
                 },
                 {
-                    "task": "Make sure to get guest email addresses or sign them up for Marriott Bonvoy if they are not already a member.",
+                    "task": "Print the Exceptions Report at least 20 minutes after checking the folios.  (F8-BOffice-C-E-Y)",
                     "done": false
                 },
                 {
@@ -81,30 +105,7 @@
                     "done": false
                 },
                 {
-                    "task": "Refresh coffee & water station.",
-                    "done": false
-                },
-                {
-                    "task": "Stock In a Pinch Market and take out any expired items.  Give all expired items to AGM.",
-                    "done": false
-                },
-                {
-                    "task": "Organize the In-A-Pinch storage area.",
-                    "done": false
-                },
-                {
-                    "task": "Tidy up and straighten the lobby and wipe down the tables when it's necessary.",
-                    "done": false
-                }
-            ]
-        },
-        {
-
-            "startBy": "18:00:00-07:00",
-            "dueBy": "20:00:00-07:00",
-            "listItems": [
-                {
-                    "task": "Cancel all 6pm reservations without a guaranteed payment type… NO CASH! (FOffice-A-C-Enter-A-Enter).",
+                    "task": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports). (if you have had check ins)",
                     "done": false
                 },
                 {
@@ -120,15 +121,47 @@
                     "done": false
                 },
                 {
-                    "task": "Clean and Sanitized the Key Cards",
+                    "task": "Block all arrivals still due to check in before processing the One Button. *Your terminal will be down temporarily, so if you check anyone in to a room, be sure to make a copy or imprint of the guest credit card. Do not forget to check the guest into the PMS once the system is up.",
                     "done": false
                 },
                 {
-                    "task": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports).",
+                    "task": "Count your bank to determine your cash drop (if any). Don't wait to the end of your shift to do the drop from previous business day.",
                     "done": false
                 },
                 {
-                    "task": "Print PrePay Report (F8-FOffice-P-P) Ensure all guests have proper credit.",
+                    "task": "Run Shift Closing report BUT DO NOT UPDATE IT YET. (F8-FOffice-C-S, “Option”=P F10). Review amount to drop and review to ensure proper charge codes, and fix if needed so that drop reflects Closing Report.",
+                    "done": false
+                },
+                {
+                    "task": "Run Shift Closing reports * Now close out Shift 2 (F8-FOffice-C-S “Option”=U F10, follow prompts to update to next shift).",
+                    "done": false
+                }
+            ]
+        },
+        {
+            "startBy": "02:00:00-07:00",
+            "dueBy": "03:00:00-07:00",
+            "listItems": [
+                {
+                    "task": "Do NOT use Server Terminal to run Backup or to Run Night Audit use a regular workstation!",
+                    "done": false
+                },
+                {
+                    "task": "Insert today’s Audit tape in the tape drive and do the PMS backup.  (F8-Audit-B-OK)",
+                    "done": false
+                },
+                {
+                    "task": "When the PMS backup is completed start the ONE BUTTON (F8-Audit-N) Takes approx. 10 min.  You will not be able to use FOSSE.",
+                    "done": false
+                }
+            ]
+        },
+        {
+            "startBy": "03:00:00-07:00",
+            "dueBy": "07:00:00-07:00",
+            "listItems": [
+                {
+                    "task": "Input the guest wake up calls through the phone switchboard. Review the ” All GXP Open Cases” view for Wake-up call requests to enter the requests into the phone system.",
                     "done": false
                 },
                 {
@@ -136,51 +169,75 @@
                     "done": false
                 },
                 {
-                    "task": "Check credit cards for additional authorization. (F8-BOffice-C-C-Y-Enter-F4-Y-Enter) and notify guests as needed to update their account.",
+                    "task": "Update MARSHA availability. (F8-Rsrv-M-A-A-Enter 4 times-Y).",
                     "done": false
                 },
                 {
-                    "task": "Print the credit card exception report (F8-BOffice-C-E-Y-Enter-Enter). Search for any declined credit cards and resolve.",
+                    "task": "Update Alpha Files. (F8-Sysmgt-S-A)",
                     "done": false
                 },
                 {
                     "task": "Update Marsha Interface Status. (F8-Rsrv-M-D . Make sure that MARSHA interface is running properly. You can tell by the cursor moving automatically through the sections. If it seems to be frozen or not responding properly, call PMS Support at 240-632-6000 Option 1-2-2 and ask for help. When done checking, hit “E” to get out of this screen.",
                     "done": false
-                }
-            ]
-        },
-        {
-            "startBy": "20:00:00-07:00",
-            "dueBy": "22:00:00-07:00",
-            "listItems": [
+                },
                 {
-                    "task": "Continuously monitor FOSSE home screen for any “Process Mobile” and “Process GuestRequest” alerts.  Prepare, complete and respond to all requests for Mobile Check-In and Mobile Requests in a timely manner.",
+                    "task": "Verify that all Ghost Tasks are started. (F8-Sysmgt-I-D-Enter).",
                     "done": false
                 },
                 {
-                    "task": "Complete a Bucket Check (F8-FOffice-F-B). Check credit card number, address, company name, departure date, and rate.",
+                    "task": "Check in any reservations or walk-ins that arrived while the computer was down. Remember that if the guest is only staying for one night, the number of nights will be zero. In addition, Room and Tax must be manually posted now. Also, change the housekeeping room status from “Occ New” to “Occ Dirty”.",
                     "done": false
                 },
                 {
-                    "task": "Clean and straighten up the front desk area. Wipe down monitor screens and counters.",
+                    "task": "Print a GNS (guaranteed no show) report. (F8-Audit-G-Enter)",
                     "done": false
                 },
                 {
-                    "task": "Restock and arrange the back-office storage with all guest amenities.",
+                    "task": "Print Night Audit Pack (F8-Audit-R-A-Enter-P-Enter-Print to the front desk)",
                     "done": false
                 },
                 {
-                    "task": "Clean and Sanitized the key cards.",
+                    "task": "Stock In a Pinch Market and take out any expired items.  Give all expired items to AGM.",
                     "done": false
-                }
-            ]
-        },
-        {
-            "startBy": "20:00:00-07:00",
-            "dueBy": "22:30:00-07:00",
-            "listItems": [
+                },
                 {
-                    "task": "Count your bank to determine your cash drop (if any). Wait for the NA shift to count the drawer before departing your shift.",
+                    "task": "Restock and arrange the back storage with all guest amenities.",
+                    "done": false
+                },
+                {
+                    "task": "Vacuum entire back/front office and take out the trash.",
+                    "done": false
+                },
+                {
+                    "task": "Clean and Sanitized the Key Cards",
+                    "done": false
+                },
+                {
+                    "task": "Update the weather board and ensure it appears presentable, fun and professional.",
+                    "done": false
+                },
+                {
+                    "task": "Ensure the coffee is refreshed by 5am.",
+                    "done": false
+                },
+                {
+                    "task": "Sort and file the shift work, reports, and appropriate documentation for the previous day. Put it into an envelope and put in box with other audit packs.",
+                    "done": false
+                },
+                {
+                    "task": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports). (if you have had check ins)",
+                    "done": false
+                },
+                {
+                    "task": "Block all Marriott Rewards Elite Members Guaranteed Benefits rooms and then the Pre Arrival Planning Report, Special Requests such as Wheelchair accessible A5, Connecting rooms C1, and Internet reservations with a D7.",
+                    "done": false
+                },
+                {
+                    "task": "Clean and straighten up the front desk counter.",
+                    "done": false
+                },
+                {
+                    "task": "Count your bank to determine your cash drop (if any). Wait for the AM shift to count the drawer before departing your shift.",
                     "done": false
                 },
                 {

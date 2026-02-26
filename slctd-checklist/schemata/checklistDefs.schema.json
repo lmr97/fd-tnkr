@@ -16,7 +16,7 @@
             "enum": [ 
                 "AM", 
                 "PM", 
-                "Night Audit" 
+                "Audit" 
             ] 
         },
         "startBy": { 
