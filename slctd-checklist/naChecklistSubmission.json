@@ -1,0 +1,205 @@
+{
+    "$schema": "./schemata/checklistSubmission.schema.json",
+    "date": "2026-02-25",
+    "employee": "Orion",
+    "shift": "PM",
+    "sections": [
+        {
+            "startBy": "15:00:00-07:00",
+            "dueBy": "18:00:00-07:00",
+            "listItems": [
+                {
+                    "task": "Communicate with AM shift and go over any important information need passed on.",
+                    "done": false
+                },
+                {
+                    "task": "Fill out occupancy information in Red Book and review any information needing to be passed along.",
+                    "done": false
+                },
+                {
+                    "task": "Count your drawer and verify it has the correct amount before starting your shift. Ensure the drawer is balanced before the AM shift departs.",
+                    "done": false
+                },
+                {
+                    "task": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports)",
+                    "done": false
+                },
+                {
+                    "task": "Login to GXP and review “All GXP Open Cases.”  Communicate with AM shift on any open or “In Progress” cases in GXP to ensure timely response and completion.  Complete pre-arrival requests, hard block the room and make necessary notes in FOSSE.",
+                    "done": false
+                },
+                {
+                    "task": "Check hotel's Gmail inbox (towneplacesuitesslc@gmail.com PW:slctd84101) for outstanding emails that require attention",
+                    "done": false
+                },
+                {
+                    "task": "Review your availability (F8-Rsrv-R-V)",
+                    "done": false
+                },
+                {
+                    "task": "Check room status and make sure there are no VACANT DIRTY (VD) rooms before housekeeping leaves for the day",
+                    "done": false
+                },
+                {
+                    "task": "Block rooms (as needed) (F8-Rsrv-B-R-F10). Verify all Marriott Rewards members are blocked.",
+                    "done": false
+                },
+                {
+                    "task": "Do Parking Pass bucket check: for unreturned passes, please write the folio number on the parking agreement and leave the slip for the AGM.",
+                    "done": false
+                },
+                {
+                    "task": "Prepare a wake-up call sheet for use throughout the night.",
+                    "done": false
+                },
+                {
+                    "task": "Log the temperatures of the freezers and refrigerator in the kitchen.",
+                    "done": false
+                },
+                {
+                    "task": "Make sure and put any maintenance requests into GXP so that we have a way of tracking common issues in rooms.",
+                    "done": false
+                },
+                {
+                    "task": "Continuously monitor FOSSE home screen for any “Process Mobile” and “Process GuestRequest” alerts.  Prepare, complete and respond to all requests for Mobile Check-In and Mobile Requests in a timely manner.",
+                    "done": false
+                },
+                {
+                    "task": "Verify any Out of Order Rooms (F8-RoomMgt-H-P-R-Enter).",
+                    "done": false
+                },
+                {
+                    "task": "Post any Valet Charges (charge code, VL) and deliver dry cleaning to guest rooms. Make sure you are posting the amount on the listed on the ticket attached to the clothing, and not what is listed on the daily invoice – amounts are different.",
+                    "done": false
+                },
+                {
+                    "task": "Make sure to get guest email addresses or sign them up for Marriott Bonvoy if they are not already a member.",
+                    "done": false
+                },
+                {
+                    "task": "Check for Internet Advance Deposit Reservations (F8-Rsrv-A-Q) (only if there are any reservations) *Important: This will take a minute to generate. Clear report Y/N? Hit N.    To post the advance deposit - Go into reservation of each guest - O – D – N. Charge the applicable credit card for the dollar amount provided. Hit F10. The amount of the advance deposit will appear in the Account Detail box at top right on Adv Deposit. Ensure there is a ‘D7’ in the special request field for incidental folio.  Clear from report Y/N? Hit yes if amount has been posted and appears in the account detail box.",
+                    "done": false
+                },
+                {
+                    "task": "Refresh coffee & water station.",
+                    "done": false
+                },
+                {
+                    "task": "Stock In a Pinch Market and take out any expired items.  Give all expired items to AGM.",
+                    "done": false
+                },
+                {
+                    "task": "Organize the In-A-Pinch storage area.",
+                    "done": false
+                },
+                {
+                    "task": "Tidy up and straighten the lobby and wipe down the tables when it's necessary.",
+                    "done": false
+                }
+            ]
+        },
+        {
+
+            "startBy": "18:00:00-07:00",
+            "dueBy": "20:00:00-07:00",
+            "listItems": [
+                {
+                    "task": "Cancel all 6pm reservations without a guaranteed payment type… NO CASH! (FOffice-A-C-Enter-A-Enter).",
+                    "done": false
+                },
+                {
+                    "task": "Sign in to the DLZ and complete Daily Learning Questions on the home screen",
+                    "done": false
+                },
+                {
+                    "task": "Sign in to the DLZ: click on TRAINING and work on completing recommended and/or required training (Best practice: spend 15-30 minutes per shift, or as time allows)",
+                    "done": false
+                },
+                {
+                    "task": "Read and respond to any training emails from AGM",
+                    "done": false
+                },
+                {
+                    "task": "Clean and Sanitized the Key Cards",
+                    "done": false
+                },
+                {
+                    "task": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports).",
+                    "done": false
+                },
+                {
+                    "task": "Print PrePay Report (F8-FOffice-P-P) Ensure all guests have proper credit.",
+                    "done": false
+                },
+                {
+                    "task": "Continuously monitor FOSSE home screen for any “Process Mobile” and “Process GuestRequest” alerts.  Prepare, complete and respond to all requests for Mobile Check-In and Mobile Requests in a timely manner.",
+                    "done": false
+                },
+                {
+                    "task": "Check credit cards for additional authorization. (F8-BOffice-C-C-Y-Enter-F4-Y-Enter) and notify guests as needed to update their account.",
+                    "done": false
+                },
+                {
+                    "task": "Print the credit card exception report (F8-BOffice-C-E-Y-Enter-Enter). Search for any declined credit cards and resolve.",
+                    "done": false
+                },
+                {
+                    "task": "Update Marsha Interface Status. (F8-Rsrv-M-D . Make sure that MARSHA interface is running properly. You can tell by the cursor moving automatically through the sections. If it seems to be frozen or not responding properly, call PMS Support at 240-632-6000 Option 1-2-2 and ask for help. When done checking, hit “E” to get out of this screen.",
+                    "done": false
+                }
+            ]
+        },
+        {
+            "startBy": "20:00:00-07:00",
+            "dueBy": "22:00:00-07:00",
+            "listItems": [
+                {
+                    "task": "Continuously monitor FOSSE home screen for any “Process Mobile” and “Process GuestRequest” alerts.  Prepare, complete and respond to all requests for Mobile Check-In and Mobile Requests in a timely manner.",
+                    "done": false
+                },
+                {
+                    "task": "Complete a Bucket Check (F8-FOffice-F-B). Check credit card number, address, company name, departure date, and rate.",
+                    "done": false
+                },
+                {
+                    "task": "Clean and straighten up the front desk area. Wipe down monitor screens and counters.",
+                    "done": false
+                },
+                {
+                    "task": "Restock and arrange the back-office storage with all guest amenities.",
+                    "done": false
+                },
+                {
+                    "task": "Clean and Sanitized the key cards.",
+                    "done": false
+                }
+            ]
+        },
+        {
+            "startBy": "20:00:00-07:00",
+            "dueBy": "22:30:00-07:00",
+            "listItems": [
+                {
+                    "task": "Count your bank to determine your cash drop (if any). Wait for the NA shift to count the drawer before departing your shift.",
+                    "done": false
+                },
+                {
+                    "task": "Run Shift Closing report BUT DO NOT UPDATE IT YET. (F8-FOffice-C-S, “Option”=P F10). Review amount to drop and review to ensure proper charge codes, and fix if needed so that drop reflects Closing Report.",
+                    "done": false
+                },
+                {
+                    "task": "Run Shift Closing reports * Now close out Shift 2 (F8-FOffice-C-S “Option”=U F10, follow prompts to update to next shift).",
+                    "done": false
+                },
+                {
+                    "task": "Look at GXP and review “All GXP Open Cases.”  Ensure all cases are either closed or passed on to next shift.",
+                    "done": false
+                },
+                {
+                    "task": "Review and write in the Pass on Log.",
+                    "done": false
+                }
+            ]
+        }
+    ]
+}

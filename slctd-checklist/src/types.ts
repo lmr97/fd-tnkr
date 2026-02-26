@@ -1,7 +1,9 @@
+import { type Ref } from 'vue'
+
 export enum Shift {
   AM = "AM", 
   PM = "PM", 
-  NightAudit = "Night Audit" 
+  Audit = "Audit" 
 }
 
 export type ListItem = {
@@ -21,4 +23,10 @@ export type Checklist = {
   employee: string,
   shift: Shift,
   sections: Array<Section>
+}
+
+export type ChecklistRefSet = {
+  PM: Ref,
+  AM: Ref,
+  Audit: Ref,
 }
