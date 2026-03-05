@@ -1,7 +1,7 @@
 /*
     To compile, run: 
 
-        gcc svr.c -o svr -lws2_32
+        gcc windows_svr.c -o windows_svr -lws2_32
 
     The linked library needs to be placed AFTER the output option (-o)
 */
@@ -12,6 +12,65 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <winsock2.h>
+
+enum HTTP_METHOD {
+    CONNECT,
+    D_LETE,  // `DELETE` was already taken!
+    GET,
+    HEAD,
+    OPTIONS,
+    PATCH,
+    POST,
+    PUT,
+    TRACE
+};
+
+struct http_req {
+    enum HTTP_METHOD method;
+    char* path;
+    char* body;
+};
+
+struct http_resp {
+    int status;
+    char* body;
+};
+
+enum HTTP_METHOD map_method(char* method) {
+    switch (method[0]) {
+        case 'C':
+            return CONNECT;
+        case 'D':
+            return D_LETE;
+        case 'G':
+            return GET;
+        case 'H':
+            return HEAD;
+        case 'O':
+            return OPTIONS;
+        case 'P': {
+            switch (method[1]) {
+                case 'A':
+                    return PATCH;
+                case 'O':
+                    return POST;
+                case 'U':
+                    return PUT;
+            }
+        }
+    }
+}
+
+int parse_http_req(char buf[], int buf_len, struct http_req* req) {
+    char method[7];
+    char* path_start = strtok(buf, ' ');
+    int method_len = buf - path_start + 1;   // plus \0
+    
+    strncpy(method, buf, method_len);
+    method[method_len] = '\0';               // null terminate
+
+    req->method = map_method(method);
+}
 
 int main(int argc, char** argv) {
     WSADATA wsad;
@@ -37,12 +96,12 @@ int main(int argc, char** argv) {
     struct hostent* localhost = gethostbyname("");
     char* localIP = inet_ntoa(*(struct in_addr *)*localhost->h_addr_list);
 
-    printf("%s\n", localIP);
     // Set up the sockaddr structure
     struct sockaddr_in sock_ad;
+    int port = 8080;
     sock_ad.sin_family = AF_INET;
     sock_ad.sin_addr.s_addr = inet_addr(localIP);
-    sock_ad.sin_port = htons(8080);
+    sock_ad.sin_port = htons(port);
 
     int addrlen = sizeof(sock_ad);
     int max_clients = 1;
@@ -73,8 +132,8 @@ int main(int argc, char** argv) {
     //     fds[i].fd
     // }
     
-    const int buf_len = 200;
-    printf("Server init complete! listening...\n");
+    const int buf_len = 1000;
+    printf("Server init complete! listening on %s:%d...\n", localhost->h_addr_list[0], port);
     while (true) {
         // poll(fds, max_clients+1, -1);
         char buf[buf_len];
@@ -88,6 +147,7 @@ int main(int argc, char** argv) {
         printf("(read %d bytes)\n", bytes_read);
         closesocket(incom_sock);
     }
+
     WSACleanup();
     return 0;
 }
