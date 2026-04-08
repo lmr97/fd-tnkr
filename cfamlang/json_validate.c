@@ -5,50 +5,84 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define MAX_SCOPE_DEPTH 100
+#define MAX_Scope_DEPTH 100
 
 enum CONTEXT {
+    OBJECT,
     STRING,
     NUMBER,
-    OBJECT,
     ARRAY,
+    ESCAPE_SEQ,
     VALUE         // for values that aren't known to be ay type yet
 };
 
-struct scope {
-    enum CONTEXT queue[MAX_SCOPE_DEPTH];
+struct Scope {
+    enum CONTEXT queue[MAX_Scope_DEPTH];
     int depth;
 };
 
-enum CONTEXT get_context(struct scope s)
+enum CONTEXT get_context(struct Scope s)
 {
-    s.queue[s.depth - 1];
-    return OBJECT;
+    if (!s.depth) { return OBJECT; }
+    return s.queue[s.depth - 1];
 }
 
-int update_context(struct scope s, char curr_char, enum CONTEXT* ctx)
+int update_context(struct Scope* s, char curr_char, enum CONTEXT* ctx)
 {
-    if (s.depth >= MAX_SCOPE_DEPTH)
+    if (s->depth >= MAX_Scope_DEPTH)
     {
         return 1;
     }
+
+    switch (curr_char)
+    {
+        case 0x20:
+        case 0x0d:
+        case 0x09: 
+        case 0x0a: 
+        {
+            // whitespace doesn't effect contex
+            return 0;
+        }
+        case '\\': 
+        {
+            *ctx = ESCAPE_SEQ;
+            return 0;
+        }
+        case '\"': 
+        {
+            if (*ctx == STRING)
+            {
+                s->depth--;
+            }
+            *ctx = STRING;
+            return 0;
+        }
+    }
     *ctx = OBJECT;
+    return 0;
 }
 
 bool validate(char* json_str)
 {
-    enum CONTEXT ctx = OBJECT;
+    enum CONTEXT* ctx;
+    *ctx = OBJECT;
     int pos = 0;
     char curr_char = json_str[pos];
+
+    struct Scope* s = (struct Scope*)malloc(sizeof(struct Scope));
+    s->depth = 0;
+
     while (curr_char)
     {
-        ctx = update_context(ctx, curr_char);
-        switch (ctx) {
+        int update_err = update_context(s, curr_char, ctx);
+        switch (*ctx) {
             case STRING: 
         }
         pos++;
     }
 
+    free(s);
     return true;
 }
 
