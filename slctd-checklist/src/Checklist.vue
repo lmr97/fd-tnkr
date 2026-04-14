@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { type Checklist, type SectionRaw } from './types'
-import amClRaw from '../amChecklist.json?raw'
-import pmClRaw from '../pmChecklist.json?raw'
-import naClRaw from '../naChecklist.json?raw'
+import amClRaw from '../checklists/amChecklist.json?raw'
+import pmClRaw from '../checklists/pmChecklist.json?raw'
+import naClRaw from '../checklists/naChecklist.json?raw'
 
-function parseChecklistJSON(jsonText: string): Checklist {
+// parse JSON, and transform array of strings into 
+// array of state-holding objects (`ListItem`s)
+function parseAndTransformChecklistJSON(jsonText: string): Checklist {
     const stp = JSON.parse(jsonText);
     const now = new Date();
     const cldate = now.toISOString().split("T")[0]
@@ -22,16 +24,18 @@ function parseChecklistJSON(jsonText: string): Checklist {
     return stp;
 }
 
+const amChecklist = parseAndTransformChecklistJSON(amClRaw);
+
 // the options available for form content
 const allChecklists = new Map<string, Checklist>(
     [
-        ["AM", parseChecklistJSON(amClRaw)], 
-        ["PM", parseChecklistJSON(pmClRaw)],
-        ["Audit", parseChecklistJSON(naClRaw)]
+        ["AM",    amChecklist], 
+        ["PM",    parseAndTransformChecklistJSON(pmClRaw)],
+        ["Audit", parseAndTransformChecklistJSON(naClRaw)]
     ]
 );
 
-const clstate = ref<Checklist>(parseChecklistJSON(amClRaw));
+const clstate = ref<Checklist>(amChecklist);
 const timeFmt = Intl.DateTimeFormat("en-us", {hour: "numeric", minute: "numeric"})
 
 function submitForm() {
@@ -66,7 +70,8 @@ function submitForm() {
         <div class="shift-wrap">
             <div v-for="[s, shiftChecklist] in allChecklists.entries()">
                 <!-- matching `id` and `for` is key to making the label clickable -->
-                <!-- further, the atribute has to be prefaced with `:` to bring the Vue variables into scope -->
+                <!-- further, the atribute has to be prefaced with `:` 
+                to bring the Vue variables into scope -->
                 <input 
                     :id="s" 
                     type="radio" 
