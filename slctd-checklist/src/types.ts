@@ -11,6 +11,12 @@ export type ListItem = {
   done: boolean
 }
 
+export type SectionRaw = {
+  startBy: Date,
+  dueBy: Date,
+  listItems: Array<string>
+}
+
 export type Section = {
   startBy: Date,
   dueBy: Date,
@@ -23,10 +29,4 @@ export type Checklist = {
   employee: string,
   shift: Shift,
   sections: Array<Section>
-}
-
-export type ChecklistRefSet = {
-  PM: Ref,
-  AM: Ref,
-  Audit: Ref,
 }

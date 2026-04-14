@@ -1,32 +1,43 @@
 <script setup lang="ts">
-import { ref, type Ref} from 'vue'
-import { type Section, type Checklist, type ChecklistRefSet, Shift } from './types'
-import amClRaw from '../amChecklistSubmission.json?raw'
-import pmClRaw from '../pmChecklistSubmission.json?raw'
-import naClRaw from '../naChecklistSubmission.json?raw'
+import { ref } from 'vue'
+import { type Checklist, type SectionRaw } from './types'
+import amClRaw from '../amChecklist.json?raw'
+import pmClRaw from '../pmChecklist.json?raw'
+import naClRaw from '../naChecklist.json?raw'
 
-function genRef(jsonText: string): Ref<Checklist> {
-    const stp = JSON.parse(jsonText)
-    const cldate = stp.date
-    stp.sections.forEach((s: Section) => {
-            s.startBy = new Date(cldate + "T" + s.startBy)
-            s.dueBy   = new Date(cldate + "T" + s.dueBy)
+function parseChecklistJSON(jsonText: string): Checklist {
+    const stp = JSON.parse(jsonText);
+    const now = new Date();
+    const cldate = now.toISOString().split("T")[0]
+    stp.date = cldate;
+    stp.employee = "";
+    stp.sections = stp.sections.map((s: SectionRaw) => {
+            return {
+                startBy: new Date(cldate + "T" + s.startBy),
+                dueBy:   new Date(cldate + "T" + s.dueBy),
+                listItems: s.listItems.map((li) => {return {task: li, done: false}})
+            };
         }
     )
-    const currRef = ref<Checklist>(stp)
-    return currRef
+    return stp;
 }
-const clrefs: ChecklistRefSet = {
-    AM: genRef(amClRaw), 
-    PM: genRef(pmClRaw),
-    Audit: genRef(naClRaw)
-}
-var clstate = clrefs.PM
+
+// the options available for form content
+const allChecklists = new Map<string, Checklist>(
+    [
+        ["AM", parseChecklistJSON(amClRaw)], 
+        ["PM", parseChecklistJSON(pmClRaw)],
+        ["Audit", parseChecklistJSON(naClRaw)]
+    ]
+);
+
+const clstate = ref<Checklist>(parseChecklistJSON(amClRaw));
 const timeFmt = Intl.DateTimeFormat("en-us", {hour: "numeric", minute: "numeric"})
 
 function submitForm() {
   console.log(
     clstate?.value.employee,
+    clstate?.value.shift,
     clstate?.value.date,
     JSON.stringify(
       clstate?.value.sections[0]?.listItems[0]
@@ -53,7 +64,7 @@ function submitForm() {
     <div class="in-wrap">
         <label for="shift">Shift</label>
         <div class="shift-wrap">
-            <div v-for="s in Shift">
+            <div v-for="[s, shiftChecklist] in allChecklists.entries()">
                 <!-- matching `id` and `for` is key to making the label clickable -->
                 <!-- further, the atribute has to be prefaced with `:` to bring the Vue variables into scope -->
                 <input 
@@ -61,7 +72,7 @@ function submitForm() {
                     type="radio" 
                     :value="s" 
                     v-model="clstate.shift" 
-                    @click="clstate = clrefs[s]"
+                    @click="clstate = shiftChecklist"
                 />
                 <label :for="s">{{ s }}</label>
             </div>
@@ -105,7 +116,7 @@ function submitForm() {
     width: 100%;
     margin-bottom: 10px;
     transition-property: background-color;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }
 #submit-button:hover {
@@ -144,14 +155,17 @@ input:not([type="checkbox"]) {
 }
 input[type="checkbox"] {
     height: fit-content;
-    transform: scale(1.7);
+    transform: scale(1.6);
+    border-radius: 20px;
+    /* needed to help the box shadows conform to the box radius */
+    background-color: #000; 
     margin: 15px;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0px 0px 7px #fff;
     transition-property: box-shadow;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
 }
 input[type="checkbox"]:hover {
-    box-shadow: 0 0 10px #5f4f5f;
+    box-shadow: 0px 0px 6px #5f4f5f;
 }
 .sect-wrap {
     font-weight: 500;
