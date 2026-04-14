@@ -7,14 +7,14 @@
             "dueBy": "09:00:00-07:00",
             "listItems":  [
                 "Fill out occupancy information in Red Book and review any information needing to be passed along.",
-                "Count your drawer, and ensure it is at correct:00-07:00ount before beginning your shift. Ensure the drawer is balanced before the NA shift departs.",
+                "Count your drawer, and ensure it is at correct amount before beginning your shift. Ensure the drawer is balanced before the NA shift departs.",
                 "Login to GXP and review “All GXP Open Cases.”  Communicate with night auditor on any open or “In Progress” cases in GXP to ensure timely response and completion.",
                 "Check hotel's Gmail inbox (towneplacesuitesslc@gmail.com PW:slctd84101) for outstanding emails that require attention",
                 "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports).",
                 "Straighten up the Lobby and wipe down the tables when it's necessary",
                 "Between 8:00AM-8:30AM - Call Red Hanger if guest laundry needs to be picked up.",
                 "Review your availability (F8-Rsrv-R-V).",
-                "Print Arrivals Report (F8-Rsrv-P-A-F10) in order to block rooms for the arriving:00-07:00bassador, Titanium, Platinum, Gold, and Silver guests.  Block remaining arrivals for today. (NOTE: MAKE SURE TO BLOCK GUESTS STAYING THROUGH THE WEEKEND ON THE EAST FACING SIDE TO AVOID MUSIC FROM SURROUNDING NIGHT CLUBS).",
+                "Print Arrivals Report (F8-Rsrv-P-A-F10) in order to block rooms for the arriving Ambassador, Titanium, Platinum, Gold, and Silver guests.  Block remaining arrivals for today. (NOTE: MAKE SURE TO BLOCK GUESTS STAYING THROUGH THE WEEKEND ON THE EAST FACING SIDE TO AVOID MUSIC FROM SURROUNDING NIGHT CLUBS).",
                 "Add in company names for those with corporate rates.",
                 "Check for duplicate reservations (F8-Rsrv-P-D-Enter-F10) and keep them blocked in same room if it's available. Notify the Housekeeping Manager and/or Supervisor to clean as a “Stayover”.",
                 "Continuously monitor FOSSE home screen for any “Process Mobile” and “Process GuestRequest” alerts.  Prepare, complete and respond to all requests for Mobile Check-In and Mobile Requests in a timely manner.",
@@ -29,13 +29,13 @@
             "startBy": "09:00:00-07:00",
             "dueBy": "11:00:00-07:00",
             "listItems":  [
-                "Check for Internet Advance Deposit Reservations (F8-Rsrv-A-Q) (only if there are any reservations) *Important: This will take a minute to generate. Clear report Y/N? Hit N.    To post the advance deposit - Go into reservation of each guest - O – D – N. Charge the applicable credit card for the dollar:00-07:00ount provided. Hit F10. The:00-07:00ount of the advance deposit will appear in the Account Detail box at top right on Adv Deposit. Ensure there is a 'D7' in the special request field for incidental folio.  Clear from report Y/N? Hit yes if:00-07:00ount has been posted and appears in the account detail box.",
+                "Check for Internet Advance Deposit Reservations (F8-Rsrv-A-Q) (only if there are any reservations) *Important: This will take a minute to generate. Clear report Y/N? Hit N.    To post the advance deposit - Go into reservation of each guest - O – D – N. Charge the applicable credit card for the dollar amount provided. Hit F10. The amount of the advance deposit will appear in the Account Detail box at top right on Adv Deposit. Ensure there is a 'D7' in the special request field for incidental folio.  Clear from report Y/N? Hit yes if amount has been posted and appears in the account detail box.",
                 "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports).",
                 "Update MARSHA Interface Status. (F8-Rsrv-M-D). Make sure that MARSHA interface is running properly. You can tell by the cursor moving automatically through the sections. If it seems to be frozen or not responding properly, call PMS Support at 240-632-6000 Option 1-2-2 and ask for help. When done checking, hit “E” to get out of this screen.",
                 "Sign in to the DLZ and complete Daily Learning Questions on the home screen",
                 "Sign in to the DLZ: click on TRAINING and work on completing recommended and/or required training (Best practice: spend 15-30 minutes per shift, or as time allows)",
                 "Read and respond to any training emails from AGM",
-                "Restock and arrange the back office storage with all guest:00-07:00enities.",
+                "Restock and arrange the back office storage with all guest amenities.",
                 "Organize the In-A-Pinch storage area."
             ]
         },
@@ -61,7 +61,7 @@
             "dueBy": "15:00:00-07:00",
             "listItems":  [
                 "Count your cash to determine if a drop is needed. Wait for the PM shift to count the drawer before departing your shift.",
-                "Run Shift Closing report BUT DO NOT UPDATE IT YET. (F8-FOffice-C-S, “Option”=P F10). Review:00-07:00ount to drop and review to ensure proper charge codes, and fix if needed so that drop reflects Closing Report.",
+                "Run Shift Closing report BUT DO NOT UPDATE IT YET. (F8-FOffice-C-S, “Option”=P F10). Review amount to drop and review to ensure proper charge codes, and fix if needed so that drop reflects Closing Report.",
                 "Run Shift Closing reports * Now close out Shift 2 (F8-FOffice-C-S “Option”=U F10, follow prompts to update to next shift).",
                 "Look at GXP and review “All GXP Open Cases.”  Ensure all cases are either closed or passed on to next shift."
             ]
