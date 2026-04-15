@@ -1,0 +1,394 @@
+[
+    {
+        "ShortName": "",
+        "Description": "Do Parking Pass bucket check: for unreturned passes, please write the folio number on the parking agreement and leave the slip for the AGM."
+    },
+    {
+        "ShortName": "",
+        "Description": "Add in company names for those with corporate rates."
+    },
+    {
+        "ShortName": "",
+        "Description": "Block all arrivals still due to check in before processing the One Button. *Your terminal will be down temporarily, so if you check anyone in to a room, be sure to make a copy or imprint of the guest credit card. Do not forget to check the guest into the PMS once the system is up."
+    },
+    {
+        "ShortName": "",
+        "Description": "Count your drawer, and ensure it is at correct amount before beginning your shift. Ensure the drawer is balanced before the NA shift departs."
+    },
+    {
+        "ShortName": "",
+        "Description": "Restock and arrange the back office storage with all guest amenities."
+    },
+    {
+        "ShortName": "",
+        "Description": "Check for duplicate reservations (F8-Rsrv-P-D-Enter-F10) and keep them blocked in same room if it's available. Notify the Housekeeping Manager and/or Supervisor to clean as a “Stayover”."
+    },
+    {
+        "ShortName": "",
+        "Description": "Tidy up and straighten the lobby and wipe down the tables when it's necessary."
+    },
+    {
+        "ShortName": "",
+        "Description": "Review your availability (F8-Rsrv-R-V)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Clean and straighten up the front desk area. Wipe down monitor screens and counters."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print the Exceptions Report at least 20 minutes after checking the folios.  (F8-BOffice-C-E-Y)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Print the credit card exception report (F8-BOffice-C-E-Y-Enter-Enter). Search for any declined credit cards and resolve."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Stock In a Pinch Market and take out any expired items.  Give all expired items to AGM."
+    },
+    {
+        "ShortName": "",
+        "Description": "Check hotel's Gmail inbox (towneplacesuitesslc@gmail.com PW:slctd84101) for outstanding emails that require attention"
+    },
+    {
+        "ShortName": "",
+        "Description": "Communicate with AM shift and go over any important information need passed on."
+    },
+    {
+        "ShortName": "",
+        "Description": "Verify that security cameras are working and recording properly."
+    },
+    {
+        "ShortName": "",
+        "Description": "Update Marsha Interface Status. (F8-Rsrv-M-D . Make sure that MARSHA interface is running properly. You can tell by the cursor moving automatically through the sections. If it seems to be frozen or not responding properly, call PMS Support at 240-632-6000 Option 1-2-2 and ask for help. When done checking, hit “E” to get out of this screen."
+    },
+    {
+        "ShortName": "",
+        "Description": "Update Alpha Files. (F8-Sysmgt-S-A)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Review and write in the Pass on Log."
+    },
+    {
+        "ShortName": "",
+        "Description": "Update the weather board and ensure it appears presentable, fun and professional."
+    },
+    {
+        "ShortName": "",
+        "Description": "Check Credit Card Authorization Binder for today's date and update reservations with correct method of payment."
+    },
+    {
+        "ShortName": "",
+        "Description": "Check the arrival report for non-member, then record their names on the Redbook table."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print Night Audit Pack (F8-Audit-R-A-Enter-P-Enter-Print to the front desk)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports). (if you have had check ins)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Go into Mobility Dashboard (F8-Rsrv-D) and look at the MKeyDsp to make sure all mobile keys have been sent.  Make sure no keys say Pending or Desk. Send keys that have Pending or Desk for KeyStatus."
+    },
+    {
+        "ShortName": "",
+        "Description": "Organize the In-A-Pinch storage area."
+    },
+    {
+        "ShortName": "",
+        "Description": "Ensure the coffee is refreshed by 5am."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print PrePay Report (F8-FOffice-P-P) Ensure all guests have proper credit."
+    },
+    {
+        "ShortName": "",
+        "Description": "Lock the front entrance door."
+    },
+    {
+        "ShortName": "",
+        "Description": "Review any Out of Order rooms/maintenance requests that are pending and update in FOSSE."
+    },
+    {
+        "ShortName": "",
+        "Description": "Do NOT use Server Terminal to run Backup or to Run Night Audit use a regular workstation!"
+    },
+    {
+        "ShortName": "",
+        "Description": "Refresh coffee & water station."
+    },
+    {
+        "ShortName": "",
+        "Description": "Update MARSHA Interface Status. (F8-Rsrv-M-D). Make sure that MARSHA interface is running properly. You can tell by the cursor moving automatically through the sections. If it seems to be frozen or not responding properly, call PMS Support at 240-632-6000 Option 1-2-2 and ask for help. When done checking, hit “E” to get out of this screen."
+    },
+    {
+        "ShortName": "",
+        "Description": "Block rooms (as needed) (F8-Rsrv-B-R-F10). Verify all Marriott Rewards members are blocked."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print a GNS (guaranteed no show) report. (F8-Audit-G-Enter)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Fill out occupancy information in Red Book and review any information needing to be passed along."
+    },
+    {
+        "ShortName": "",
+        "Description": "Input the guest wake up calls through the phone switchboard. Review the ” All GXP Open Cases” view for Wake-up call requests to enter the requests into the phone system."
+    },
+    {
+        "ShortName": "",
+        "Description": "Verify any Out of Order Rooms (F8-RoomMgt-H-P-R-Enter)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Check credit cards for additional authorization. (F8-BOffice-C-C-Y-Enter-F4-Y-Enter) and notify guests as needed to update their account."
+    },
+    {
+        "ShortName": "",
+        "Description": "Login to GXP and review “All GXP Open Cases.”  Communicate with night auditor on any open or “In Progress” cases in GXP to ensure timely response and completion."
+    },
+    {
+        "ShortName": "",
+        "Description": "Count your bank to determine your cash drop (if any). Wait for the AM shift to count the drawer before departing your shift."
+    },
+    {
+        "ShortName": "",
+        "Description": "Post any Valet Charges (charge code, VL) and deliver dry cleaning to guest rooms. Make sure you are posting the amount on the listed on the ticket attached to the clothing, and not what is listed on the daily invoice – amounts are different."
+    },
+    {
+        "ShortName": "",
+        "Description": "Check for Internet Advance Deposit Reservations (F8-Rsrv-A-Q) (only if there are any reservations) *Important: This will take a minute to generate. Clear report Y/N? Hit N.    To post the advance deposit - Go into reservation of each guest - O – D – N. Charge the applicable credit card for the dollar amount provided. Hit F10. The amount of the advance deposit will appear in the Account Detail box at top right on Adv Deposit. Ensure there is a 'D7' in the special request field for incidental folio.  Clear from report Y/N? Hit yes if amount has been posted and appears in the account detail box."
+    },
+    {
+        "ShortName": "",
+        "Description": "Verify any Unexpected Stayovers (F8-RoomMgt-H-P-U)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print Departures List for the following day. (F8-Rsrv-P-P-Change Date to tomorrow’s date)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Restock and arrange the back storage with all guest amenities."
+    },
+    {
+        "ShortName": "",
+        "Description": "Sign in to the DLZ and complete Daily Learning Questions on the home screen"
+    },
+    {
+        "ShortName": "",
+        "Description": "If any guests are walked, use walk option on reservation in FOSSE. Follow steps entering new hotel information and enter return date if they will be returning to hotel later in reservation."
+    },
+    {
+        "ShortName": "",
+        "Description": "Cancel all 6pm reservations without a guaranteed payment type… NO CASH! (FOffice-A-C-Enter-A-Enter)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Clean and Sanitized the key cards."
+    },
+    {
+        "ShortName": "",
+        "Description": "Count your bank to determine your cash drop (if any). Don't wait to the end of your shift to do the drop from previous business day."
+    },
+    {
+        "ShortName": "",
+        "Description": "Make sure and put any maintenance requests into GXP so that we have a way of tracking common issues in rooms."
+    },
+    {
+        "ShortName": "",
+        "Description": "Count your cash to determine if a drop is needed. Wait for the PM shift to count the drawer before departing your shift."
+    },
+    {
+        "ShortName": "",
+        "Description": "Sort and file the shift work, reports, and appropriate documentation for the previous day. Put it into an envelope and put in box with other audit packs."
+    },
+    {
+        "ShortName": "",
+        "Description": "Vacuum entire back/front office and take out the trash."
+    },
+    {
+        "ShortName": "",
+        "Description": "Clean and straighten up Front Desk area. Wipe down monitor screens and counters."
+    },
+    {
+        "ShortName": "",
+        "Description": "Run Shift Closing reports * Now close out Shift 2 (F8-FOffice-C-S “Option”=U F10, follow prompts to update to next shift)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Clean and straighten up the front desk counter."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print Discrepancies (F8-RoomMgt-H-P-D-5-Enter-Enter) and resolve with Housekeeping."
+    },
+    {
+        "ShortName": "",
+        "Description": "Complete Bucket Check (F8-FOffice-F-B). Check credit card number, address, company name, departure date, and rate are all correct."
+    },
+    {
+        "ShortName": "",
+        "Description": "Prepare a wake-up call sheet for use throughout the night."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print departure list and verify with housekeeping that all scheduled departures have vacated the room and then check the guest out in FOSSE"
+    },
+    {
+        "ShortName": "",
+        "Description": "PARKING PASSES: Collect parking passes from garage (Send maintenance with the key if you can't leave the desk) and reconcile all passes due back"
+    },
+    {
+        "ShortName": "",
+        "Description": "Block all Marriott Rewards Elite Members Guaranteed Benefits rooms and then the Pre Arrival Planning Report, Special Requests such as Wheelchair accessible A5, Connecting rooms C1, and Internet reservations with a D7."
+    },
+    {
+        "ShortName": "",
+        "Description": "Complete a Bucket Check (F8-FOffice-F-B). Check credit card number, address, company name, departure date, and rate."
+    },
+    {
+        "ShortName": "",
+        "Description": "Sign in to the DLZ: click on TRAINING and work on completing recommended and/or required training (Best practice: spend 15-30 minutes per shift, or as time allows)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Check room status and make sure there are no VACANT DIRTY (VD) rooms before housekeeping leaves for the day"
+    },
+    {
+        "ShortName": "",
+        "Description": "Continuously monitor FOSSE home screen for any “Process Mobile” and “Process GuestRequest” alerts.  Prepare, complete and respond to all requests for Mobile Check-In and Mobile Requests in a timely manner."
+    },
+    {
+        "ShortName": "",
+        "Description": "Look at GXP and review “All GXP Open Cases.”  Ensure all cases are either closed or passed on to next shift."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print the Credit Card Transaction Report. (F8-BOffice-C-T-Enter-Enter-Y-Print)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Count your drawer and verify it has the correct amount before starting your shift. Ensure the drawer is balanced before the AM shift departs."
+    },
+    {
+        "ShortName": "",
+        "Description": "Run Shift Closing report BUT DO NOT UPDATE IT YET. (F8-FOffice-C-S, “Option”=P F10). Review amount to drop and review to ensure proper charge codes, and fix if needed so that drop reflects Closing Report."
+    },
+    {
+        "ShortName": "",
+        "Description": "Communicate with PM shift and go over any important information need passed on."
+    },
+    {
+        "ShortName": "",
+        "Description": "Insert today’s Audit tape in the tape drive and do the PMS backup.  (F8-Audit-B-OK)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Check your printer and be sure there is enough paper for all reports to run without disruption."
+    },
+    {
+        "ShortName": "",
+        "Description": "Log all incoming packages and notify in-house guests."
+    },
+    {
+        "ShortName": "",
+        "Description": "Check for Internet Advance Deposit Reservations (F8-Rsrv-A-Q) (only if there are any reservations) *Important: This will take a minute to generate. Clear report Y/N? Hit N.    To post the advance deposit - Go into reservation of each guest - O – D – N. Charge the applicable credit card for the dollar amount provided. Hit F10. The amount of the advance deposit will appear in the Account Detail box at top right on Adv Deposit. Ensure there is a ‘D7’ in the special request field for incidental folio.  Clear from report Y/N? Hit yes if amount has been posted and appears in the account detail box."
+    },
+    {
+        "ShortName": "",
+        "Description": "Verify that all Ghost Tasks are started. (F8-Sysmgt-I-D-Enter)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Review your availability (F8-Rsrv-R-V)"
+    },
+    {
+        "ShortName": "",
+        "Description": "Count your drawer, and ensure it is at correct amount before beginning your shift. Ensure the drawer is balanced before the PM shift departs."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print Arrivals List for the following day. (F8-Rsrv-P-A-Change Date to Tomorrow’s Date)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Read and respond to any training emails from AGM"
+    },
+    {
+        "ShortName": "",
+        "Description": "Straighten up the Lobby and wipe down the tables when it's necessary"
+    },
+    {
+        "ShortName": "",
+        "Description": "If the hotel is oversold, determine which guests are to be walked following the guidelines established by hotel management.  Prepare the walk letters and check for availability at alternate hotels."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print Arrivals Report (F8-Rsrv-P-A-F10) in order to block rooms for the arriving Ambassador, Titanium, Platinum, Gold, and Silver guests.  Block remaining arrivals for today. (NOTE: MAKE SURE TO BLOCK GUESTS STAYING THROUGH THE WEEKEND ON THE EAST FACING SIDE TO AVOID MUSIC FROM SURROUNDING NIGHT CLUBS)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Clean and Sanitized the Key Cards"
+    },
+    {
+        "ShortName": "",
+        "Description": "When the PMS backup is completed start the ONE BUTTON (F8-Audit-N) Takes approx. 10 min.  You will not be able to use FOSSE."
+    },
+    {
+        "ShortName": "",
+        "Description": "Count your bank to determine your cash drop (if any). Wait for the NA shift to count the drawer before departing your shift."
+    },
+    {
+        "ShortName": "",
+        "Description": "Print PrePay Report (F8-FOffice-P-P) Ensure we have credit card payment for all guests."
+    },
+    {
+        "ShortName": "",
+        "Description": "Refresh Coffee & Water Station."
+    },
+    {
+        "ShortName": "",
+        "Description": "Login to GXP and review “All GXP Open Cases.”  Communicate with AM shift on any open or “In Progress” cases in GXP to ensure timely response and completion.  Complete pre-arrival requests, hard block the room and make necessary notes in FOSSE."
+    },
+    {
+        "ShortName": "",
+        "Description": "Update MARSHA availability. (F8-Rsrv-M-A-A-Enter 4 times-Y)."
+    },
+    {
+        "ShortName": "",
+        "Description": "Check in any reservations or walk-ins that arrived while the computer was down. Remember that if the guest is only staying for one night, the number of nights will be zero. In addition, Room and Tax must be manually posted now. Also, change the housekeeping room status from “Occ New” to “Occ Dirty”."
+    },
+    {
+        "ShortName": "",
+        "Description": "Log the temperatures of the freezers and refrigerator in the kitchen."
+    },
+    {
+        "ShortName": "",
+        "Description": "Restock and arrange the back-office storage with all guest amenities."
+    },
+    {
+        "ShortName": "",
+        "Description": "Make sure to get guest email addresses or sign them up for Marriott Bonvoy if they are not already a member."
+    },
+    {
+        "ShortName": "",
+        "Description": "Between 8:00AM-8:30AM - Call Red Hanger if guest laundry needs to be picked up."
+    }
+]

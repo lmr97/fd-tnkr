@@ -3,9 +3,10 @@
     "$id": "slctdChecklist",
     "description": "Describes structure of shift checklist items, with sections.",
     "type": "object",
-    "required": [ "shift", "sections" ],
+    "required": [ "shift", "version", "sections" ],
     "properties": {
         "shift": { "$ref": "./checklistDefs.schema.json#/$defs/shift" },
+        "version": { "type": "integer", "exclusiveMinimum": 0 },
         "sections": {
             "type": "array",
             "items": {
@@ -17,7 +18,14 @@
                     "listItems": {
                         "description": "The tasks that should be completed between `startBy` and `dueBy` times.",
                         "type": "array",
-                        "items": { "type": "string" }
+                        "items": {
+                            "type": "object",
+                            "required": [ "description" ],
+                            "properties": {
+                                "shortName": { "type": "string" },
+                                "description": { "type": "string" }
+                            }
+                        }
                     }
                 }
             }
