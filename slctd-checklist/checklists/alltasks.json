@@ -4,7 +4,7 @@
         "Description": "Do Parking Pass bucket check: for unreturned passes, please write the folio number on the parking agreement and leave the slip for the AGM."
     },
     {
-        "ShortName": "Add",
+        "ShortName": "Add company names to reservations",
         "Description": "Add in company names for those with corporate rates."
     },
     {
@@ -140,51 +140,51 @@
         "Description": "Print a GNS (guaranteed no show) report. (F8-Audit-G-Enter)"
     },
     {
-        "ShortName": "",
+        "ShortName": "Review Redbook, fill out occupancy and arrivals",
         "Description": "Fill out occupancy information in Red Book and review any information needing to be passed along."
     },
     {
-        "ShortName": "",
+        "ShortName": "Set up requested wakeup calls",
         "Description": "Input the guest wake up calls through the phone switchboard. Review the ”All GXP Open Cases” view for Wake-up call requests to enter the requests into the phone system."
     },
     {
-        "ShortName": "",
+        "ShortName": "Verify any OOO rooms",
         "Description": "Verify any Out of Order Rooms (F8-RoomMgt-H-P-R-Enter)."
     },
     {
-        "ShortName": "",
+        "ShortName": "Check credit cards for additional authorization",
         "Description": "Check credit cards for additional authorization. (F8-BOffice-C-C-Y-Enter-F4-Y-Enter) and notify guests as needed to update their account."
     },
     {
-        "ShortName": "",
+        "ShortName": "Check GXP for open cases",
         "Description": "Login to GXP and review “All GXP Open Cases.”  Communicate with night auditor on any open or “In Progress” cases in GXP to ensure timely response and completion."
     },
     {
-        "ShortName": "",
+        "ShortName": "Count the cash drawer",
         "Description": "Count your bank to determine your cash drop (if any). Wait for the AM shift to count the drawer before departing your shift."
     },
     {
-        "ShortName": "",
+        "ShortName": "Post dry cleaning charges and deliver the clothes",
         "Description": "Post any Valet Charges (charge code, VL) and deliver dry cleaning to guest rooms. Make sure you are posting the amount on the listed on the ticket attached to the clothing, and not what is listed on the daily invoice – amounts are different."
     },
     {
-        "ShortName": "",
+        "ShortName": "Collect advance deposits",
         "Description": "Check for Internet Advance Deposit Reservations (F8-Rsrv-A-Q) (only if there are any reservations) *Important: This will take a minute to generate. Clear report Y/N? Hit N.    To post the advance deposit - Go into reservation of each guest - O – D – N. Charge the applicable credit card for the dollar amount provided. Hit F10. The amount of the advance deposit will appear in the Account Detail box at top right on Adv Deposit. Ensure there is a 'D7' in the special request field for incidental folio.  Clear from report Y/N? Hit yes if amount has been posted and appears in the account detail box."
     },
     {
-        "ShortName": "",
+        "ShortName": "Verify any Unexpected Stayovers",
         "Description": "Verify any Unexpected Stayovers (F8-RoomMgt-H-P-U)."
     },
     {
-        "ShortName": "",
+        "ShortName": "Print departures list",
         "Description": "Print Departures List for the following day. (F8-Rsrv-P-P-Change Date to tomorrow’s date)"
     },
     {
-        "ShortName": "",
+        "ShortName": "Restock back closet with guest amenities",
         "Description": "Restock and arrange the back storage with all guest amenities."
     },
     {
-        "ShortName": "",
+        "ShortName": "Complete daily learning questions on the DLZ",
         "Description": "Sign in to the DLZ and complete Daily Learning Questions on the home screen"
     },
     {
