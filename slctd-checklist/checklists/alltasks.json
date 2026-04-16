@@ -1,142 +1,142 @@
 [
     {
-        "ShortName": "",
+        "ShortName": "Parking pass bucket check",
         "Description": "Do Parking Pass bucket check: for unreturned passes, please write the folio number on the parking agreement and leave the slip for the AGM."
     },
     {
-        "ShortName": "",
+        "ShortName": "Add",
         "Description": "Add in company names for those with corporate rates."
     },
     {
-        "ShortName": "",
+        "ShortName": "Block arrivals (night audit)",
         "Description": "Block all arrivals still due to check in before processing the One Button. *Your terminal will be down temporarily, so if you check anyone in to a room, be sure to make a copy or imprint of the guest credit card. Do not forget to check the guest into the PMS once the system is up."
     },
     {
-        "ShortName": "",
+        "ShortName": "Count cash drawer",
         "Description": "Count your drawer, and ensure it is at correct amount before beginning your shift. Ensure the drawer is balanced before the NA shift departs."
     },
     {
-        "ShortName": "",
+        "ShortName": "Restock guest supplies in back office",
         "Description": "Restock and arrange the back office storage with all guest amenities."
     },
     {
-        "ShortName": "",
+        "ShortName": "Handle stayovers",
         "Description": "Check for duplicate reservations (F8-Rsrv-P-D-Enter-F10) and keep them blocked in same room if it's available. Notify the Housekeeping Manager and/or Supervisor to clean as a “Stayover”."
     },
     {
-        "ShortName": "",
+        "ShortName": "General tidy",
         "Description": "Tidy up and straighten the lobby and wipe down the tables when it's necessary."
     },
     {
-        "ShortName": "",
+        "ShortName": "Review hotel availability",
         "Description": "Review your availability (F8-Rsrv-R-V)."
     },
     {
-        "ShortName": "",
+        "ShortName": "Clean up front desk",
         "Description": "Clean and straighten up the front desk area. Wipe down monitor screens and counters."
     },
     {
-        "ShortName": "",
+        "ShortName": "Check credit card exceptions",
         "Description": "Print the Exceptions Report at least 20 minutes after checking the folios.  (F8-BOffice-C-E-Y)"
     },
     {
-        "ShortName": "",
+        "ShortName": "Check credit card exceptions",
         "Description": "Print the credit card exception report (F8-BOffice-C-E-Y-Enter-Enter). Search for any declined credit cards and resolve."
     },
     {
-        "ShortName": "",
+        "ShortName": "Print Contingency Report",
         "Description": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports)."
     },
     {
-        "ShortName": "",
+        "ShortName": "Restock the Market",
         "Description": "Stock In a Pinch Market and take out any expired items.  Give all expired items to AGM."
     },
     {
-        "ShortName": "",
+        "ShortName": "Check hotel's Gmail",
         "Description": "Check hotel's Gmail inbox (towneplacesuitesslc@gmail.com PW:slctd84101) for outstanding emails that require attention"
     },
     {
-        "ShortName": "",
+        "ShortName": "Get pass-along from AM",
         "Description": "Communicate with AM shift and go over any important information need passed on."
     },
     {
-        "ShortName": "",
+        "ShortName": "Ensure security cameras work",
         "Description": "Verify that security cameras are working and recording properly."
     },
     {
-        "ShortName": "",
+        "ShortName": "Update Marsha Interface Status",
         "Description": "Update Marsha Interface Status. (F8-Rsrv-M-D . Make sure that MARSHA interface is running properly. You can tell by the cursor moving automatically through the sections. If it seems to be frozen or not responding properly, call PMS Support at 240-632-6000 Option 1-2-2 and ask for help. When done checking, hit “E” to get out of this screen."
     },
     {
-        "ShortName": "",
+        "ShortName": "Update Alpha Files",
         "Description": "Update Alpha Files. (F8-Sysmgt-S-A)"
     },
     {
-        "ShortName": "",
+        "ShortName": "Update pass-on log",
         "Description": "Review and write in the Pass on Log."
     },
     {
-        "ShortName": "",
+        "ShortName": "Update weather board",
         "Description": "Update the weather board and ensure it appears presentable, fun and professional."
     },
     {
-        "ShortName": "",
+        "ShortName": "Check Credit Card Authorization Binder",
         "Description": "Check Credit Card Authorization Binder for today's date and update reservations with correct method of payment."
     },
     {
-        "ShortName": "",
-        "Description": "Check the arrival report for non-member, then record their names on the Redbook table."
+        "ShortName": "Add non-member names to Redbook",
+        "Description": "Check the arrival report for non-members, then record their names on the Redbook table."
     },
     {
-        "ShortName": "",
+        "ShortName": "Print Night Audit Pack",
         "Description": "Print Night Audit Pack (F8-Audit-R-A-Enter-P-Enter-Print to the front desk)"
     },
     {
-        "ShortName": "",
+        "ShortName": "Print Contingency Reports",
         "Description": "Print the Contingency Reports: (F8-FOffice-Reports-Contingency Reports). (if you have had check ins)"
     },
     {
-        "ShortName": "",
+        "ShortName": "Complete mobile check-ins",
         "Description": "Go into Mobility Dashboard (F8-Rsrv-D) and look at the MKeyDsp to make sure all mobile keys have been sent.  Make sure no keys say Pending or Desk. Send keys that have Pending or Desk for KeyStatus."
     },
     {
-        "ShortName": "",
+        "ShortName": "Organize Market storage",
         "Description": "Organize the In-A-Pinch storage area."
     },
     {
-        "ShortName": "",
+        "ShortName": "Refresh coffee",
         "Description": "Ensure the coffee is refreshed by 5am."
     },
     {
-        "ShortName": "",
+        "ShortName": "Analyze Pre-pay report",
         "Description": "Print PrePay Report (F8-FOffice-P-P) Ensure all guests have proper credit."
     },
     {
-        "ShortName": "",
+        "ShortName": "Lock front entrance",
         "Description": "Lock the front entrance door."
     },
     {
-        "ShortName": "",
+        "ShortName": "Verify out of order rooms",
         "Description": "Review any Out of Order rooms/maintenance requests that are pending and update in FOSSE."
     },
     {
-        "ShortName": "",
+        "ShortName": "Use regular workstation to run night audit",
         "Description": "Do NOT use Server Terminal to run Backup or to Run Night Audit use a regular workstation!"
     },
     {
-        "ShortName": "",
+        "ShortName": "Refresh coffee & water station",
         "Description": "Refresh coffee & water station."
     },
     {
-        "ShortName": "",
+        "ShortName": "Update MARSHA Interface Status",
         "Description": "Update MARSHA Interface Status. (F8-Rsrv-M-D). Make sure that MARSHA interface is running properly. You can tell by the cursor moving automatically through the sections. If it seems to be frozen or not responding properly, call PMS Support at 240-632-6000 Option 1-2-2 and ask for help. When done checking, hit “E” to get out of this screen."
     },
     {
-        "ShortName": "",
+        "ShortName": "Block rooms",
         "Description": "Block rooms (as needed) (F8-Rsrv-B-R-F10). Verify all Marriott Rewards members are blocked."
     },
     {
-        "ShortName": "",
+        "ShortName": "Review GNS report",
         "Description": "Print a GNS (guaranteed no show) report. (F8-Audit-G-Enter)"
     },
     {
@@ -145,7 +145,7 @@
     },
     {
         "ShortName": "",
-        "Description": "Input the guest wake up calls through the phone switchboard. Review the ” All GXP Open Cases” view for Wake-up call requests to enter the requests into the phone system."
+        "Description": "Input the guest wake up calls through the phone switchboard. Review the ”All GXP Open Cases” view for Wake-up call requests to enter the requests into the phone system."
     },
     {
         "ShortName": "",
@@ -197,7 +197,7 @@
     },
     {
         "ShortName": "",
-        "Description": "Clean and Sanitized the key cards."
+        "Description": "Clean and Sanitize the key cards."
     },
     {
         "ShortName": "",
