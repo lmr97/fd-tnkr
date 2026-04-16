@@ -1,6 +1,7 @@
 {
     "$schema": "../schemata/checklist.schema.json",
     "shift": "PM",
+    "version": 1,
     "sections": [
         {
             "startBy": "15:00:00-07:00",

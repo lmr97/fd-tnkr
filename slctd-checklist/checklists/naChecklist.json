@@ -1,6 +1,7 @@
 {
     "$schema": "../schemata/checklist.schema.json",
     "shift": "Audit",
+    "version": 1,
     "sections": [
         {
             "startBy": "23:00:00-07:00",
