@@ -6,16 +6,15 @@ const rawJSON = shiftIdxMap.keys().map(k => {
     return fs.readFileSync(fileName, "utf-8");
 });
 const parsed = rawJSON.map(JSON.parse)
-const tasks = JSON.parse(allTasksRaw);
-var inserts = "INSERT INTO ShiftTask (StartBy, DueBy, ChecklistId)\nVALUES\n";
+var inserts = "INSERT INTO Segments (StartBy, DueBy, ChecklistId)\nVALUES\n";
 
 for (const ckls of parsed) {
-    
+    for (const section of ckls.sections) {
+        inserts += `('${section.startBy.replaceAll("'", "''")}', '${section.dueBy.replaceAll("'", "''")}','${shiftIdxMap.get(ckls.shift)}'),\n`
+    }
 }
-inserts += tasks.map(el => {
-    return `('${el.ShortName.replaceAll("'", "''")}', '${el.Description.replaceAll("'", "''")}')`
-}).join(",\n");
 
-inserts += ";"
+inserts = inserts.slice(0, -2) + ";\n"
 
-fs.writeFileSync("ShiftTask_inserts.sql", inserts);
+
+fs.writeFileSync("Segments_inserts.sql", inserts);
