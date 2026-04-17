@@ -1,4 +1,4 @@
-INSERT INTO SegmentShiftTask (ParentSegmentId, TasksToDoId)
+INSERT INTO SegmentShiftTask (ParentSegmentsId, TasksToDoId)
 VALUES
 (4, 36),
 (4, 4),
