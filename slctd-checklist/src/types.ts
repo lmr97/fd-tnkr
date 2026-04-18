@@ -6,27 +6,29 @@ export enum Shift {
   Audit = "Audit" 
 }
 
-export type ListItem = {
-  task: string,
-  done: boolean
+export type ShiftTask = {
+  id: number,
+  shortName: string,
+  description: string,
+  done?: boolean
 }
 
-export type SectionRaw = {
+export type SegmentRaw = {
   startBy: Date,
   dueBy: Date,
   listItems: Array<string>
 }
 
-export type Section = {
+export type Segment = {
   startBy: Date,
   dueBy: Date,
-  listItems: Array<ListItem>
+  tasksToDo: Array<ShiftTask>
 }
 
 export type Checklist = {
-  $schema: string,
-  date: string,
-  employee: string,
+  $schema?: string,
+  date?: string,
+  employee?: string,
   shift: Shift,
-  sections: Array<Section>
+  segments: Array<Segment>
 }

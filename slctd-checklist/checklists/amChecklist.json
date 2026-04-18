@@ -6,7 +6,7 @@
         {
             "startBy": "07:00:00-07:00",
             "dueBy": "09:00:00-07:00",
-            "listItems": [
+            "tasksToDo": [
                 {
                     "shortName": "",
                     "description": "Fill out occupancy information in Red Book and review any information needing to be passed along."
@@ -80,7 +80,7 @@
         {
             "startBy": "09:00:00-07:00",
             "dueBy": "11:00:00-07:00",
-            "listItems": [
+            "tasksToDo": [
                 {
                     "shortName": "",
                     "description": "Check for Internet Advance Deposit Reservations (F8-Rsrv-A-Q) (only if there are any reservations) *Important: This will take a minute to generate. Clear report Y/N? Hit N.    To post the advance deposit - Go into reservation of each guest - O \u2013 D \u2013 N. Charge the applicable credit card for the dollar amount provided. Hit F10. The amount of the advance deposit will appear in the Account Detail box at top right on Adv Deposit. Ensure there is a 'D7' in the special request field for incidental folio.  Clear from report Y/N? Hit yes if amount has been posted and appears in the account detail box."
@@ -118,7 +118,7 @@
         {
             "startBy": "11:00:00-07:00",
             "dueBy": "14:30:00-07:00",
-            "listItems": [
+            "tasksToDo": [
                 {
                     "shortName": "",
                     "description": "Print departure list and verify with housekeeping that all scheduled departures have vacated the room and then check the guest out in FOSSE"
@@ -168,7 +168,7 @@
         {
             "startBy": "14:30:00-07:00",
             "dueBy": "15:00:00-07:00",
-            "listItems": [
+            "tasksToDo": [
                 {
                     "shortName": "",
                     "description": "Count your cash to determine if a drop is needed. Wait for the PM shift to count the drawer before departing your shift."

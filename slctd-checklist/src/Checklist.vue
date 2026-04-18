@@ -1,53 +1,74 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { type Checklist, type SectionRaw } from './types'
-import amClRaw from '../checklists/amChecklist.json?raw'
-import pmClRaw from '../checklists/pmChecklist.json?raw'
-import naClRaw from '../checklists/naChecklist.json?raw'
+import { onBeforeMount, ref } from 'vue'
+import { type Checklist, type Segment } from './types'
+// import amClRaw from '../checklists/amChecklist.json?raw'
+// import pmClRaw from '../checklists/pmChecklist.json?raw'
+// import naClRaw from '../checklists/auditChecklist.json?raw'
+const checklists = ref<Checklist[]>();
+const clstate = ref<Checklist>();
+const timeFmt = Intl.DateTimeFormat("en-us", {hour: "numeric", minute: "numeric"})
+
+// the options available for form content
+const allChecklists = ref<Map<string, Checklist>>();
+
+async function fetchChecklists() {
+    const response = await fetch(
+        "https://localhost:7225/api/Checklist", 
+        {
+            method: "GET",
+            headers: {
+                "Access-Control-Allow-Headers": "Access-Control-Allow-Origin,Access-Control-Request-Method",
+                "Access-Control-Allow-Origin": "*"
+            }
+        }
+    )
+    if (!response.ok) {
+        throw new Error(`returned with status: ${response.status}: ${response.status}`)
+    }
+
+    checklists.value = await response.json()
+    if (!checklists.value)
+    {
+        throw new Error("YOU FUCKING SUCK")
+    }
+    clstate.value = checklists.value[0];
+    allChecklists.value = new Map([
+        ["AM",    transformChecklist(checklists.value[0])], 
+        ["PM",    transformChecklist(checklists.value[1])],
+        ["Audit", transformChecklist(checklists.value[2])]
+    ]);
+}
 
 // parse JSON, and transform array of strings into 
 // array of state-holding objects (`ListItem`s)
-function parseAndTransformChecklistJSON(jsonText: string): Checklist {
-    const stp = JSON.parse(jsonText);
+function transformChecklist(stp: Checklist): Checklist {
     const now = new Date();
     const cldate = now.toISOString().split("T")[0]
     stp.date = cldate;
     stp.employee = "";
-    stp.sections = stp.sections.map((s: SectionRaw) => {
+    stp.segments = stp.segments.map((s: Segment) => {
             return {
                 startBy: new Date(cldate + "T" + s.startBy),
                 dueBy:   new Date(cldate + "T" + s.dueBy),
-                listItems: s.listItems.map((li) => {return {task: li, done: false}})
+                tasksToDo: s.tasksToDo.map((li) => {return {...li, done: false}})
             };
         }
     )
     return stp;
 }
 
-const amChecklist = parseAndTransformChecklistJSON(amClRaw);
-
-// the options available for form content
-const allChecklists = new Map<string, Checklist>(
-    [
-        ["AM",    amChecklist], 
-        ["PM",    parseAndTransformChecklistJSON(pmClRaw)],
-        ["Audit", parseAndTransformChecklistJSON(naClRaw)]
-    ]
-);
-
-const clstate = ref<Checklist>(amChecklist);
-const timeFmt = Intl.DateTimeFormat("en-us", {hour: "numeric", minute: "numeric"})
-
 function submitForm() {
   console.log(
-    clstate?.value.employee,
-    clstate?.value.shift,
-    clstate?.value.date,
+    clstate.value?.employee,
+    clstate.value?.shift,
+    clstate.value?.date,
     JSON.stringify(
-      clstate?.value.sections[0]?.listItems[0]
+      clstate?.value?.segments[0]?.tasksToDo[0]
     )
   )
 }
+
+onBeforeMount(fetchChecklists)
 
 </script>
 
@@ -68,7 +89,7 @@ function submitForm() {
     <div class="in-wrap">
         <label for="shift">Shift</label>
         <div class="shift-wrap">
-            <div v-for="[s, shiftChecklist] in allChecklists.entries()">
+            <div v-for="[s, shiftChecklist] in allChecklists?.entries()">
                 <!-- matching `id` and `for` is key to making the label clickable -->
                 <!-- further, the atribute has to be prefaced with `:` 
                 to bring the Vue variables into scope -->
@@ -84,15 +105,15 @@ function submitForm() {
         </div>
     </div>
     
-    <li v-for="section in clstate?.sections" :key="section.dueBy.getTime()">
+    <li v-for="segment in clstate?.segments" :key="segment.dueBy.getTime()">
       <div class="sect-wrap">
-        <h2>{{ timeFmt.format(section.startBy) }} &ndash; {{ timeFmt.format(section.dueBy) }}</h2>
-        <li class="task" v-for="item in section.listItems" :key="item.task">
+        <h2>{{ timeFmt.format(segment.startBy) }} &ndash; {{ timeFmt.format(segment.dueBy) }}</h2>
+        <li class="task" v-for="item in segment.tasksToDo" :key="item.id">
             <div class="centered">
-                <input type="checkbox" :id="item.task" v-model="item.done" />
+                <input type="checkbox" :id="item.id.toString()" v-model="item.done" />
             </div>
             <div class="task-text-wrap">
-                <label :for="item.task">{{ item.task }}</label>
+                <label :for="item.id.toString()">{{ item.description }}</label>
             </div>
         </li>
       </div>

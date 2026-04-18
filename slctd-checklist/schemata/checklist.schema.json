@@ -11,11 +11,11 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": [ "startBy", "dueBy", "listItems" ],
+                "required": [ "startBy", "dueBy", "tasksToDo" ],
                 "properties": {
                     "startBy": { "$ref": "./checklistDefs.schema.json#/$defs/startBy" },
                     "dueBy": { "$ref": "./checklistDefs.schema.json#/$defs/dueBy" },
-                    "listItems": {
+                    "tasksToDo": {
                         "description": "The tasks that should be completed between `startBy` and `dueBy` times.",
                         "type": "array",
                         "items": {

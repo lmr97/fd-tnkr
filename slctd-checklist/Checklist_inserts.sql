@@ -1,5 +1,5 @@
 INSERT INTO Checklist (Shift, Version)
 VALUES
-('AM', 1),
-('PM', 1),
-('Audit', 1);
+(0, 1),
+(1, 1),
+(2, 1);

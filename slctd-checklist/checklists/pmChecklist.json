@@ -6,7 +6,7 @@
         {
             "startBy": "15:00:00-07:00",
             "dueBy": "18:00:00-07:00",
-            "listItems": [
+            "tasksToDo": [
                 {
                     "shortName": "",
                     "description": "Communicate with AM shift and go over any important information need passed on."
@@ -100,7 +100,7 @@
         {
             "startBy": "18:00:00-07:00",
             "dueBy": "20:00:00-07:00",
-            "listItems": [
+            "tasksToDo": [
                 {
                     "shortName": "",
                     "description": "Cancel all 6pm reservations without a guaranteed payment type\u2026 NO CASH! (FOffice-A-C-Enter-A-Enter)."
@@ -150,7 +150,7 @@
         {
             "startBy": "20:00:00-07:00",
             "dueBy": "22:00:00-07:00",
-            "listItems": [
+            "tasksToDo": [
                 {
                     "shortName": "",
                     "description": "Continuously monitor FOSSE home screen for any \u201cProcess Mobile\u201d and \u201cProcess GuestRequest\u201d alerts.  Prepare, complete and respond to all requests for Mobile Check-In and Mobile Requests in a timely manner."
@@ -176,7 +176,7 @@
         {
             "startBy": "20:00:00-07:00",
             "dueBy": "22:30:00-07:00",
-            "listItems": [
+            "tasksToDo": [
                 {
                     "shortName": "",
                     "description": "Count your bank to determine your cash drop (if any). Wait for the NA shift to count the drawer before departing your shift."
