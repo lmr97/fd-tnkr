@@ -44,10 +44,12 @@ function updateRoomMap(req: Request, res: Response) {
     }
 }
 
+// must come before routes
+// only parses bodies with "application/json" content type
+svr.use(express.json())  
+
 svr.get("/", sendRoomMap)
 svr.put("/", updateRoomMap)
 svr.get("/ping", ping)
-
-svr.use(express.json())       // only parses bodies with Content-Type set to "application/json"
 
 svr.listen(port, ip, () => console.log(`Server listening on ${ip}:${port}`))
